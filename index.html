@@ -9,17 +9,14 @@
     crossorigin="anonymous"
   ></script>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>THENOTEBOOK</title>
   </head>
 
   <body>
     <header>
-      <nav class="flex container">
-        <div class="logo">
-          <h2> <a href="#" class="logo"> logo</a></h2>
-        </div>
-        <div>
-          <ul class="flex">
+      <nav class="navbar container">
+        <a href="#" class="logo"> logo</a>
+          <ul class="flex nav-menu">
             <li><a href="" class="flex-element">Home</a></li>
             <li><a href="" class="flex-element">About</a></li>
             <li><a href="" class="flex-element p-sm-l">Features</a></li>
@@ -35,13 +32,17 @@
               </a>
             </div>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
       </nav>
     </header>
 
     <section class=" container">
         <div class="center-video">
-          <video loop autoplay muted>
+          <video loop autoplay muted >
             <source src="pexels-mikhail-nilov-6898228.mp4" type="video/mp4"> 
           </video>
         </div>
@@ -52,38 +53,51 @@
       <h1>our products</h1>
       <div class="products">
         <div class="product">
-          <img src="img/photo_2021-08-27_21-01-02.jpg" alt="" />
-          <h3 class="product-title">The.notbook pro</h3>
-          <p class="product-price">$ 79.00 USD</p>
+          <a href="cms.html">
+            <img src="img/pro two2 kitGIRL copy.jpg" alt="" />
+            <h3 class="product-title">The.notbook pro</h3>
+            <p class="product-price">$ 79.00 USD</p>
+          </a>
+
         </div>
         <div class="product">
-          <img src="img/photo_2021-08-27_21-01-02.jpg" alt="" />
-          <h3 class="product-title">The.notbook pro</h3>
-          <p class="product-price">$ 79.00 USD</p>
-        </div>
-      </div>
-      <div class="products">
-        <div class="product">
-          <img src="img/photo_2021-08-27_21-01-02.jpg" alt="" />
-          <h3 class="product-title">The.notbook pro</h3>
-          <p class="product-price">$ 79.00 USD</p>
-        </div>
-        <div class="product">
-          <img src="img/photo_2021-08-27_21-01-02.jpg" alt="" />
-          <h3 class="product-title">The.notbook pro</h3>
-          <p class="product-price">$ 79.00 USD</p>
+          <a href="cms.html">
+            <img src="img/box copy.jpg" alt="" />
+            <h3 class="product-title">The.notbook pro</h3>
+            <p class="product-price">$ 79.00 USD</p>
+          </a>
         </div>
       </div>
       <div class="products">
         <div class="product">
-          <img src="img/photo_2021-08-27_21-01-02.jpg" alt="" />
-          <h3 class="product-title">The.notbook pro</h3>
-          <p class="product-price">$ 79.00 USD</p>
+          <a href="cms.html">
+            <img src="img/box.jpg" alt="" />
+            <h3 class="product-title">The.notbook pro</h3>
+            <p class="product-price">$ 79.00 USD</p>
+          </a>
+        </div>
+         <div class="product">
+          <a href="cms.html">
+            <img src="img/not only white .jpg" alt="" />
+            <h3 class="product-title">The.notbook pro</h3>
+            <p class="product-price">$ 79.00 USD</p>
+          </a>
+        </div>
+      </div>
+      <div class="products">
+        <div class="product">
+          <a href="cms.html">
+            <img src="img/pro two2 kitGIRL.jpg" alt="" />
+            <h3 class="product-title">The.notbook pro</h3>
+            <p class="product-price">$ 79.00 USD</p>
+          </a>
         </div>
         <div class="product">
-          <img src="img/photo_2021-08-27_21-01-02.jpg" alt="" />
-          <h3 class="product-title">The.notbook pro</h3>
-          <p class="product-price">$ 79.00 USD</p>
+          <a href="cms.html">
+            <img src="img/pure .BOK.jpg" alt="" />
+            <h3 class="product-title">The.notbook pro</h3>
+            <p class="product-price">$ 79.00 USD</p>
+          </a>
         </div>
       </div>
     </section>
@@ -110,10 +124,9 @@ questions section
           <div class="grid-wrapper">
             <a class="d-flex " id="a1" >
               <h3>Where are you located?</h3>
-              <i class="fas fa-plus icon"></i>
+              <i class="fas fa-plus icon iconTransformClose"></i>
             </a>
-
-            <div class=" wrap2 hidden">
+            <div class=" wrap2 hidden" style="display: none;">
               <p class="hidden-p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, magnam ducimus iste praesentium expedita deleniti esse consequatur porro voluptas rerum repellendus rem ab numquam, corrupti inventore vero natus, recusandae magni et libero velit. Error reiciendis amet enim minima pariatur explicabo ea, maiores voluptatum vitae ipsum, nihil perspiciatis quia vero voluptatibus.
               </p>
@@ -128,7 +141,7 @@ questions section
               <i class="fas fa-plus icon2"></i>
             </a>
 
-            <div class="wrap3 hidden2">
+            <div class="wrap3 hidden2" style="display: none;">
               <p class="hidden-p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, magnam ducimus iste praesentium expedita deleniti esse consequatur porro voluptas rerum repellendus rem ab numquam, corrupti inventore vero natus, recusandae magni et libero velit. Error reiciendis amet enim minima pariatur explicabo ea, maiores voluptatum vitae ipsum, nihil perspiciatis quia vero voluptatibus.
               </p>
@@ -139,7 +152,7 @@ questions section
               <h3>Can I use this for client work?</h3>
               <i class="fas fa-plus icon3"></i>
             </a>
-            <div class="wrap5 hidden3">
+            <div class="wrap5 hidden3" style="display: none;">
               <p class="hidden-p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, magnam ducimus iste praesentium expedita deleniti esse consequatur porro voluptas rerum repellendus rem ab numquam, corrupti inventore vero natus, recusandae magni et libero velit. Error reiciendis amet enim minima pariatur explicabo ea, maiores voluptatum vitae ipsum, nihil perspiciatis quia vero voluptatibus.
               </p>
@@ -155,7 +168,7 @@ questions section
       </div>
 
       <!-- customers rating Container  -->
-      <div class="flex-bottom  responsive-max-width ">
+      <div class="flex-bottom  ">
 
         <!--  customers No.1 -->
 
@@ -200,7 +213,7 @@ questions section
             </div>
           <div class="customers-rating-bottom" >   
             <div class="customers-rating-img">
-              <img src="img/customer-1.jpg" alt="">
+              <img src="img/customer-2.jpg" alt="">
             </div>  
             <div class="customers-rating-bottom-description">
               <h4>Marcus B</h4>
@@ -227,7 +240,7 @@ questions section
             </div>
           <div class="customers-rating-bottom" >   
             <div class="customers-rating-img">
-              <img src="img/customer-1.jpg" alt="">
+              <img src="img/customer-3.jpg" alt="">
             </div>  
             <div class="customers-rating-bottom-description">
               <h4>Marcus B</h4>

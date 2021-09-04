@@ -5,7 +5,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+a:focus,a:visited {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
 html {
   font-size: 62.5%;
   font-family: sans-serif;
@@ -20,24 +24,52 @@ body {
   margin: 0 auto;
 }
 
-nav {
-  padding: 3rem 0;
-}
-.flex {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
 }
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+} */
 ul {
   list-style-type: none;
 }
 
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo {
   color: #fff;
   font-size: 3rem;
   cursor: pointer;
   text-decoration: none;
-  padding-bottom: 1.5rem;
+  font-weight: bold;
 }
 .logo:hover {
   color: rgb(136, 136, 136);
@@ -48,6 +80,17 @@ ul {
   color: #fff;
   font-size: 1.5rem;
   padding-right: 2em;
+}
+.hamburger {
+  background: transparent;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  border: 0;
+  display: none;
+}
+.hamburger:focus {
+  outline: none;
 }
 .flex-element:hover {
   color: rgb(136, 136, 136);
@@ -100,8 +143,8 @@ ul {
 .products {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-column-gap: 80px;
-  grid-row-gap: 80px;
+  grid-column-gap: 8rem;
+  grid-row-gap: 8rem;
   -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
   -ms-grid-rows: auto;
@@ -110,7 +153,9 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
+.products a {
+  text-decoration: none;
+}
 .product {
   margin: 0 auto;
   height: 100%;
@@ -124,7 +169,7 @@ img {
   width: 100%;
   object-fit: cover;
 }
-.product > img {
+.product  img {
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -158,12 +203,17 @@ img {
 .hidden {
   display: none;
   transition: all 1s ease;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 .wrap2 {
   transform: translateY(-10px);
 }
 .wrap1 {
-  transform: translateY(0px);
+  display: block;
+  top: 0;
+  left: 0;
   transition: all 0.5s ease;
 }
 
@@ -250,6 +300,7 @@ img {
   width: 80%;
   margin-top: 10px;
 }
+
 .right-grid {
   -ms-grid-column-span: 7;
   grid-column-end: 13;
@@ -523,6 +574,9 @@ customers rating us
   justify-content: center;
   /* width: 100rem; */
 }
+.youMayLike--flex a{
+  text-decoration: none;
+}
 
 .youMayLike_flex--row1 img {
   width: 100%;
@@ -584,7 +638,93 @@ customers rating us
   }
 }
 
-@media screen and (max-width: 950px) {
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    left: 0rem;
+    top: -100%;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu.active {
+    top: 5rem;
+  }
+
+  .nav-menu > * {
+    margin: 2rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-ul.show {
+    display: flex;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    max-height: 60rem;
+    max-width: 60rem;
+  }
+  .flex-bottom {
+    flex-direction: column;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  .mr-m {
+    margin-right: 5rem;
+    padding-top: 1rem;
+  }
+
+  .mr-s {
+    margin-right: 2rem;
+  }
+  .d-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .asked-questions {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .left-grid {
+margin: 0 auto;
+  }
+}
 
 
+@media only screen and (max-width: 500px) {
+
+  .flex-bottom {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
 }
