@@ -5,7 +5,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-a:focus,a:visited {
+a:focus,
+a:visited {
   outline: none;
   text-decoration: none;
   border: none;
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
 }
 
 .container {
@@ -65,11 +66,19 @@ ul {
   align-items: center;
 }
 .logo {
-  color: #fff;
-  font-size: 3rem;
   cursor: pointer;
+  text-transform: uppercase;
+}
+.logo > a {
   text-decoration: none;
-  font-weight: bold;
+  color: #fff;
+}
+.logo  h1 {
+  font-size: 2rem;
+}
+.logo p {
+  color: rgb(184, 183, 183);
+  padding-left: .3rem;
 }
 .logo:hover {
   color: rgb(136, 136, 136);
@@ -79,7 +88,7 @@ ul {
   text-decoration: none;
   color: #fff;
   font-size: 1.5rem;
-  padding-right: 2em;
+  padding-right: 1em;
 }
 .hamburger {
   background: transparent;
@@ -120,24 +129,23 @@ ul {
   border-radius: 5px;
 }
 
-.icon-after::after {
+.shoping-cart-icon span {
   content: "0";
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #000;
   background-color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem .8rem;
   border-radius: 50%;
 }
 .icon-after {
   padding-right: 2rem;
 }
 
-.center-video > video {
-  /* max-height: 120rem; */
-  justify-content: center;
+.hero-img > img {
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
+  max-height: 80rem;
 }
 
 .products {
@@ -169,7 +177,7 @@ img {
   width: 100%;
   object-fit: cover;
 }
-.product  img {
+.product img {
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -178,7 +186,7 @@ img {
   color: #fff;
   text-align: center;
   font-size: 3rem;
-  margin: 7rem 0 5rem;
+  margin: 30rem 0 5rem;
   text-transform: uppercase;
 }
 
@@ -371,11 +379,11 @@ customers rating us
   border-radius: 10px;
   overflow: hidden;
   padding: 2rem;
-  flex-basis: 25%;
+  flex-basis: 22%;
 }
 .customers-rating-headding {
-  font-size: 1.8rem;
-  padding: 0.5rem 0;
+  font-size: 2rem;
+  padding: 2rem 0;
 }
 .customers-rating-bottom {
   display: flex;
@@ -389,6 +397,7 @@ customers rating us
   color: rgb(136, 136, 136);
   font-size: 1.5rem;
   width: 80%;
+  line-height: 1.5;
 }
 
 .customers-rating-img {
@@ -499,6 +508,8 @@ customers rating us
 
 
 */
+
+
 .sticky_imgs img {
   width: 100%;
   object-fit: cover;
@@ -574,7 +585,7 @@ customers rating us
   justify-content: center;
   /* width: 100rem; */
 }
-.youMayLike--flex a{
+.youMayLike--flex a {
   text-decoration: none;
 }
 
@@ -586,7 +597,6 @@ customers rating us
 }
 
 .youMayLike_flex--row1 {
-  flex-basis: 20%;
 }
 
 /*  Responsive for the home screen  */
@@ -689,7 +699,7 @@ customers rating us
   .product {
     display: flex;
     flex-direction: column;
-    max-height: 60rem;
+    max-height: 90rem;
     max-width: 60rem;
   }
   .flex-bottom {
@@ -709,6 +719,9 @@ customers rating us
     display: flex;
     flex-direction: column;
   }
+  .mt-m {
+    margin: 8rem 0 2rem;
+  }
 
   .asked-questions {
     width: 100%;
@@ -716,15 +729,41 @@ customers rating us
   }
 
   .left-grid {
-margin: 0 auto;
+    margin: 0 auto;
   }
 }
 
-
 @media only screen and (max-width: 500px) {
-
   .flex-bottom {
-    max-width: 40rem;
+    max-width: 35rem;
     margin: 0 auto;
+  }
+  .flex-footer {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  .footer-description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+.sticky_img-content{
+  display: flex;
+  flex-basis: 50%;
+}
+
+  .mr-m {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .mr-s {
+    margin: 2rem auto;
+  }
+  li.twitter {
+    padding-right: 0;
   }
 }

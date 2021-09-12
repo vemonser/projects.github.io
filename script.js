@@ -8,6 +8,16 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
+// const addCart = document.querySelector(".addCart");
+
+// addCart.addEventListener("click", function () {
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//   }
+// });
+
+document.querySelector(".icon-after").style.content = "2";
+
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
@@ -15,26 +25,23 @@ function mobileMenu() {
   navMenu.classList.toggle("active");
 }
 
-
 function hideShowElement() {
-const x = document.querySelector(".hidden");
-if (x.style.display === "none" ) {
-  x.style.display = "block";
-  x.offsetHeight;
-  x.classList.add("wrap1");
-  x.classList.remove("wrap2");
-  document.querySelector(".icon").classList.remove("iconTransformClose");
-  document.querySelector(".icon").classList.add("iconTransformOpen");
-} else {
-  x.style.display = "none";
-  document.querySelector(".icon").classList.add("iconTransformClose");
-  document.querySelector(".icon").classList.remove("iconTransformOpen");
-  x.classList.remove("wrap1");
-  x.classList.add("wrap2");
+  const x = document.querySelector(".hidden");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.offsetHeight;
+    x.classList.add("wrap1");
+    x.classList.remove("wrap2");
+    document.querySelector(".icon").classList.remove("iconTransformClose");
+    document.querySelector(".icon").classList.add("iconTransformOpen");
+  } else {
+    x.style.display = "none";
+    document.querySelector(".icon").classList.add("iconTransformClose");
+    document.querySelector(".icon").classList.remove("iconTransformOpen");
+    x.classList.remove("wrap1");
+    x.classList.add("wrap2");
+  }
 }
-}
-
-
 
 function hideShowElement2() {
   const x = document.querySelector(".hidden2");
@@ -93,3 +100,4 @@ document.getElementById("a3").addEventListener("click", hideShowElement3);
     document.querySelector(".hidden").classList.add("wrap2");
 
     */
+
