@@ -1,0 +1,144 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.popup {
+  background-color: rgba(0, 0, 0, 0.493);
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.popup-content {
+  height: 800px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.993);
+  border-radius: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: relative;
+  border-radius: 20px;
+}
+.close {
+  position: relative;
+  top: -36px;
+  right: -274px;
+}
+.title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+  background-color: #23242626;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.text-title {
+  display: inline-table;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  color: rgb(0, 0, 0);
+}
+input#nomOfItem {
+  width: 72px;
+  position: relative;
+  top: -40px;
+  right: -406px;
+}
+.product {
+  border: 1px solid rgba(41, 38, 38, 0.062);
+  max-height: 85px;
+}
+.imgcard {
+  display: flex;
+  position: relative;
+  top: 4px;
+  left: 5px;
+  width: 66px;
+  height: 60px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+p.card-text {
+  color: #1b1b1ba8;
+  width: 60px;
+  height: 76px;
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  right: 360px;
+  font-size: xx-small;
+}
+
+.card.col-md-12.d-flex {
+  height: 84px;
+}
+
+form {
+  padding: 20px;
+  margin-top: 15px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea#mass {
+  background-color: #3d3e3f50;
+  border: 2px solid rgb(88, 87, 86);
+  height: 60px;
+  color: #fff;
+  margin-top: 20px;
+  color: #1b1b1ba8;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea#mass {
+  background-color: #3d3e3f50 !important;
+  border: 2px solid rgb(88, 87, 86);
+  height: 60px;
+  color: #fff;
+  margin-top: 20px;
+  color: #1b1b1ba8;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea#mass:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #66686a4a !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(93 95 98 / 25%) !important;
+}
+textarea#mass {
+  height: 115px;
+}
+span#inputGroupPrepend2 {
+  margin-top: 20px;
+}
+span.input-group-text {
+  margin-top: 20px;
+}
+button.btn.btn-dark {
+  width: 93%;
+  color: #000;
+  color: #fff;
+  background-color: #000;
+}
+.mb-3 {
+  margin: 0;
+}
